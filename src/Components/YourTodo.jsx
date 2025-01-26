@@ -33,7 +33,7 @@ const YourTodo = ({ todos, settodos }) => {
   return (
     <div className="yourtodo sm:mx-10">
       <div className="flex gap-2">
-      <input onChange={handleFinished} type="checkbox" name="" id="" placeholder="" />
+      <input onChange={handleFinished} type="checkbox" name="" id="" placeholder="" className="cursor-pointer"/>
       <span>Show Finished</span>
       </div>
       <h2 className="font-bold text-base sm:text-xl mb-1">Your Todo</h2>
@@ -46,6 +46,7 @@ const YourTodo = ({ todos, settodos }) => {
                 type="checkbox"
                 checked={todo.isCompleted}
                 onChange={() => handleDone(index)}
+                className="cursor-pointer"
               />
               <span
                 className="outline-none px-2 w-full self-auto mb-0.5 break-words"
