@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body{
+    background-color: #dacdcd;
+}
+
+.btn{
+    @apply bg-[#6B4F97] hover:bg-[#5A3F7E] text-white h-8 px-5 rounded-xl hover:font-bold cursor-pointer;
+}
